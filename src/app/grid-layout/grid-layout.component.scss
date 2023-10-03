@@ -1,0 +1,29 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 1fr 5%;
+    grid-template-columns: 10% 1fr;
+    grid-template-areas: "header header"
+                         "sidenav main"
+                         " footer footer";
+}
+
+header{
+    grid-area: header;
+    background: green;
+}
+
+nav {
+    grid-area: sidenav;
+    background: blue;
+}
+
+main{
+    grid-area: main;
+    background: yellow;
+}
+
+footer{
+    grid-area: footer;
+    background: black;
+}
